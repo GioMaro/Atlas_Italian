@@ -122,11 +122,11 @@ For production deployments, it’s strongly recommended to use unique credential
 ### Run
 
 Download this [docker-compose.yml file](./docker-compose.yml). At this point you should have 2 files `.env` and
-`docker-compose.yml`.
-Now run
+`docker-compose.yml`. The compose file builds the backend and frontend images from the local source so the Italian
+translations are available out of the box. Now run
 
 ```sh
-docker-compose up -d
+docker compose up --build -d
 ```
 
 Go to http://localhost:3000 or your custom `PUBLIC_FRONT_URL`
